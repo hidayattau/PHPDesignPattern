@@ -1,12 +1,12 @@
 <?php
 
-class NanggroeAcehDarussalam implements Provinsi
+class Banten implements Provinsi
 {
     private $ibukota;
     
     public function __construct()
     {
-        $this->ibukota = "Banda Aceh";
+        $this->ibukota = "Serang";
     }
     
     public function getIbukota()

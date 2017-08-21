@@ -1,6 +1,6 @@
 <?php
 
-class IbukotaFactory extends Ibukota
+class IbukotaProvinsi extends Ibukota
 {
     private $provinsi;
     
