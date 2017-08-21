@@ -14,12 +14,16 @@ class Client
 {
     private $ibukotaFactory;
     
-    public function __construct()
+    public function __construct($provinsi)
     {
         $this->ibukotaFactory = new IbukotaFactory();
         
-        echo $this->ibukotaFactory->doFactory(new NanggroeAcehDarussalam());
+        echo $this->ibukotaFactory->doFactory(new $provinsi());
     }
 }
 
-$db = new Client();
+$provinsi = array("NanggroeAcehDarussalam");
+foreach($provinsi as $list)
+{
+    $ibukota = new Client($list);
+}
